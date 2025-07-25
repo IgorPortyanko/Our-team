@@ -1,0 +1,15 @@
+
+
+@mixin d-flex($justify, $align, $gap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin line($widht, $heiht, $bg-color) {
+    display: inline-block;
+    background-color: $bg-color;
+    width: $widht;
+    height: $heiht;
+}

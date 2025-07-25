@@ -1,9 +1,122 @@
+@use 'importer' as imp;
 
 body{
     background-color: #fff;
+    font-family: imp.$main-font-family;
+    color: imp.$main-font-color;
+    font-size: imp.$main-font-size;
 }
 
 .container{
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.header{
+    margin: 0 auto 40px auto;
+    text-align: center;
+
+    &__subtitle{
+        font-size: 1.29rem;
+        line-height: 1.33;
+        font-weight: 500;
+        color: imp.$font-color_2;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__title{
+        font-size: 4.29rem;
+        line-height: 1.1;
+        font-weight: 900;
+        color: imp.$color-gold;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__divider{
+        @include imp.d-flex(center, center, 5px);
+
+        &-line{
+            @include imp.line(210px, 1px, imp.$color-gold);
+        }
+    }
+}
+
+.profile{
+    @include imp.d-flex(center, center, 15px);
+    
+
+    &__photo{
+        padding: 65px 70px;
+    }
+
+    &__info{
+        padding: 65px 70px;
+        text-align: center;
+
+        &-title{
+            font-family: imp.$font-family-roboto;
+            font-weight: 900;
+            font-size: 2.57rem;
+            color: imp.$font-color_3;
+            margin-bottom: 20px;
+        }
+
+        &-top_line{
+            @include imp.line(100px, 1px, imp.$color-gold);
+            margin-bottom: 16px;
+        }
+
+        &-subtitle{
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 2;
+            color: imp.$font-color_3;
+            margin-bottom: 16px;
+        }
+
+        &-social{
+            @include imp.d-flex(center, center, 5px);
+            margin-bottom: 49px;
+        }
+
+        &-text{
+            font-weight: 500;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        &-bottom_divider{
+            margin-bottom: 25px;
+
+            .half-line{
+                @include imp.line(10px, 4px, imp.$color-gold);
+            }
+
+            .full-line{
+                @include imp.line(20px, 4px, imp.$color-gold);
+            }
+        }
+
+        &-btn{
+            font-family: imp.$font-family-open-sans;
+            color: imp.$font-color_3;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 5px 10px;
+
+            border: {
+                width: 1px;
+                style: solid;
+                color: imp.$color-gold;
+            }
+        }
+    }
+
+    &__divider-line{
+        @include imp.line(1px, 560px, imp.$color-gold);
+    }
+
+
 }

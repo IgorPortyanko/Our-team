@@ -4,16 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <p>The geniuses behind our work</p>
-            <h1>Our team</h1>
+            <p class="header__subtitle">The geniuses behind our work</p>
+            <h1 class="header__title">Our team</h1>
+            <div class="header__divider">
+                <span class="header__divider-line"></span>
+                <img src="./img/bonfire-sharp.svg" alt="bonfire">
+                <span class="header__divider-line"></span>
+            </div>
+
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <section class="section">
+                <div class="profile">
+                    <div class="profile__photo">
+                        <img src="./img/photo.png" alt="Photo">
+                    </div>
+                    <div class="profile__divider">
+                        <span class="profile__divider-line"></span>
+                    </div>
+                    <div class="profile__info">
+                        <h2 class="profile__info-title">Sahariar Kabir</h2>
+                            <span class="profile__info-top_line"></span>
+                        <h3 class="profile__info-subtitle">Frontend Developer</h3>
+                        <ul class="profile__info-social">
+                            <li><a href="#"><img src="./img/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                            <li><a href="#"><img src="./img/google+.svg" alt="google+"></a></li>
+                            <li><a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a></li>
+                        </ul>
+                        <p class="profile__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a
+                            nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae
+                            augue malesuada, accumsan mauris ut, consectetur.
+                        </p>
+                        <div class="profile__info-bottom_divider">
+                            <span class="half-line"></span>
+                            <span class="full-line"></span>
+                            <span class="half-line"></span>
+                        </div>
+                        <button class="profile__info-btn">view profile</button>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 
